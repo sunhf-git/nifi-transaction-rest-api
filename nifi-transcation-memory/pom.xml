@@ -9,22 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nifi-transcation-rest-api</artifactId>
+    <artifactId>nifi-transcation-memory</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.httpcomponents.client5</groupId>
-            <artifactId>httpclient5</artifactId>
-            <version>5.0.1</version>
-        </dependency>
-        <dependency>
             <groupId>com.sunhf</groupId>
             <artifactId>nifi-transcation-driver</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.nifi</groupId>
-            <artifactId>nifi-api</artifactId>
-            <version>1.11.4</version>
         </dependency>
     </dependencies>
 </project>

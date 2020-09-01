@@ -9,10 +9,26 @@
     <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>nifi-transcation-rest-api</module>
+        <module>nifi-transcation-memory</module>
+        <module>nifi-transcation-driver</module>
     </modules>
     <packaging>pom</packaging>
 
-
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.sunhf</groupId>
+            <artifactId>nifi-transcation-driver</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.nifi</groupId>
+            <artifactId>nifi-api</artifactId>
+            <version>1.11.4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
     <build>
         <plugins>
             <plugin>
